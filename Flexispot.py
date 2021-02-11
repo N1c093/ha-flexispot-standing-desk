@@ -5,7 +5,7 @@ import time
 from machine import UART, Pin
 from umqttsimple import MQTTClient
 
-class ControlPanel:
+class Controlpanel:
     WIFI_SSID = "<YOUR SSID>"
     WIFI_PASS = "<YOUR PASS>"
 
@@ -181,7 +181,7 @@ class ControlPanel:
     
     def cmd_m(self):
         self.log("sending cmd m button")
-        cmd = bytearray(b'\x9b\x06\x02\x20\x00\xac\xac\x9d')
+        cmd = bytearray(b'\x9b\x06\x02\x20\x00\xac\xb8\x9d')
         self.serial.write(cmd)
     
     def deepsleep(self, seconds):
