@@ -2,7 +2,7 @@ import machine
 import flexispot
 
 def main():
-    f = flexispot.Controlpanel(publish_discovery=False, debug=True)
+    f = flexispot.ControlPanel(publish_discovery=False, debug=True)
     for i in range(3):
         f.query_height()
 
