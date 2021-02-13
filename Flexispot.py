@@ -5,7 +5,7 @@ import time
 from machine import UART, Pin
 from umqttsimple import MQTTClient
 
-class Controlpanel:
+class ControlPanel:
     WIFI_SSID = "<YOUR SSID>"
     WIFI_PASS = "<YOUR PASS>"
 
